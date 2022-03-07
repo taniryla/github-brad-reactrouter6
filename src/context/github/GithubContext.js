@@ -26,7 +26,8 @@ export const GithubProvider = ({ children }) => {
     <GithubContext.Provider
       value={{
         users,
-        loading
+        loading,
+        fetchUsers
       }}
     >
       {children}

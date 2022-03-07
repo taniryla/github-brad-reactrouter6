@@ -8,7 +8,7 @@ import { GithubProvider } from "./context/github/GithubContext";
 
 export default function App() {
   return (
-    <>
+    <GithubProvider>
       <Router>
         <div className="flex flex-col justify-between h-screen">
           <Navbar />
@@ -27,6 +27,6 @@ export default function App() {
           </main>
         </div>
       </Router>
-    </>
+    </GithubProvider>
   );
 }
